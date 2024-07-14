@@ -1,0 +1,19 @@
+Aerolíneas Argentinas, AR
+Aeroméxico, AM
+Air Europa, UX
+Air France, AF
+China Airlines, CI
+China Eastern Airlines, MU
+Czech Airlines, OK
+Delta Air Lines, DL
+Garuda Indonesia, GA
+ITA Airways, AZ
+Kenya Airways, KQ
+KLM Royal Dutch Airlines
+Korean Air, KE
+Middle East Airlines, ME
+Saudia, SV
+TAROM, RO
+Vietnam Airlines, VN
+Virgin Atlantic, VS
+XiamenAir, MF

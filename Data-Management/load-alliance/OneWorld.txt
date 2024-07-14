@@ -1,0 +1,13 @@
+Alaska Airlines, AS
+American Airlines, AA
+British Airways, BA
+Cathay Pacific, CX
+Finnair, AY
+Iberia Airlines, IB
+Japan Airlines, JL
+Malaysia Airlines, MH
+Qantas, QF
+Qatar Airways, QR
+Royal Air Maroc, AT
+Royal Jordanian, RJ
+SriLankan Airlines, UL

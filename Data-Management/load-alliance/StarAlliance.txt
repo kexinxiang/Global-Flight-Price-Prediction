@@ -1,0 +1,26 @@
+Aegean Airlines, A3
+Air Canada, AC
+Air China, CA
+Air India, AI
+Air New Zealand, NZ
+All Nippon Airways, NH
+Asiana Airlines, OZ
+Austrian Airlines, OS
+Avianca, AV
+Brussels Airlines, SN
+Copa Airlines, CM
+Croatia Airlines, OU
+EgyptAir, MS
+Ethiopian Airlines, ET
+EVA Air, BR
+LOT Polish Airlines, LO
+Lufthansa, LH
+Scandinavian Airlines, SK
+Shenzhen Airlines, ZH
+Singapore Airlines, SQ
+South African Airways, SA
+Swiss International Air Lines, LX
+TAP Air Portugal, TP
+Thai Airways International, TG
+Turkish Airlines, TK
+United Airlines, UA
