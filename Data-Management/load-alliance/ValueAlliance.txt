@@ -1,5 +1,5 @@
 Cebu Pacific, 5J
-Cebgo
+Cebgo, null
 Jeju Air, 7C
 Nok Air, DD
 Scoot, TZ

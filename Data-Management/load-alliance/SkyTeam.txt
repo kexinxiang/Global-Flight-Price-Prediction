@@ -9,7 +9,7 @@ Delta Air Lines, DL
 Garuda Indonesia, GA
 ITA Airways, AZ
 Kenya Airways, KQ
-KLM Royal Dutch Airlines
+KLM Royal Dutch Airlines, KL
 Korean Air, KE
 Middle East Airlines, ME
 Saudia, SV

@@ -1,4 +1,4 @@
 Eastar Jet, ZE
-Lucky Air
-Urumqi Air
+Lucky Air, null
+Urumqi Air, null
 West Air China, PN
