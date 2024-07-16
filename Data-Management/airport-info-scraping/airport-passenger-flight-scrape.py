@@ -21,17 +21,25 @@ def fetch_airports_with_null_fields(cursor):
     print("Fetching airports with null annual_passenger or annual_flight")
     cursor.execute("""
         SELECT name FROM Airports
-        WHERE annual_passenger IS NULL OR annual_flight IS NULL
+        WHERE (annual_passenger IS NULL OR annual_flight IS NULL) AND open_date IS NULL
     """)
     return cursor.fetchall()
 
 def update_airport_info(airport_name, annual_passenger, annual_flight, cursor, connection):
-    update_query = """
-    UPDATE Airports
-    SET annual_passenger = %s, annual_flight = %s
-    WHERE name = %s
-    """
-    cursor.execute(update_query, (annual_passenger, annual_flight, airport_name))
+    update_query = "UPDATE Airports SET "
+    update_values = []
+    if annual_passenger is not None:
+        update_query += "annual_passenger = %s, "
+        update_values.append(annual_passenger)
+    if annual_flight is not None:
+        update_query += "annual_flight = %s, "
+        update_values.append(annual_flight)
+
+    # Remove trailing comma and add WHERE clause
+    update_query = update_query.rstrip(", ") + " WHERE name = %s"
+    update_values.append(airport_name)
+
+    cursor.execute(update_query, tuple(update_values))
     connection.commit()
 
 def extract_number(text):
@@ -69,11 +77,11 @@ def scrape_wikipedia(airport_name):
                 header = row.find('th')
                 if header:
                     header_text = header.text.lower()
-                    if 'total passengers' in header_text or 'total number of passengers' in header_text:
+                    if 'total passengers' in header_text or 'total number of passengers' in header_text or 'number of passengers' in header_text:
                         passengers_text = row.find('td').text.strip()
                         logging.info(f"Original Passengers Text for {airport_name}: {passengers_text}")
                         annual_passenger = extract_number(passengers_text)
-                    elif 'aircraft operations' in header_text or 'annual flights' in header_text:
+                    elif 'aircraft operations' in header_text or 'aircraft movements' in header_text:
                         flights_text = row.find('td').text.strip()
                         logging.info(f"Original Aircraft Movements Text for {airport_name}: {flights_text}")
                         annual_flight = extract_number(flights_text)
