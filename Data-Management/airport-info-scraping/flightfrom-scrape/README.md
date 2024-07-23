@@ -1,4 +1,4 @@
-# Airport Destination and Airline Scraper
+# FlightForm Scrape: Airport Destination and Airline Scraper
 
 This folder contains a Python script for scraping traffic information (number of destinations and airlines) for various airports and updating a MySQL database with this information.
 
