@@ -1,6 +1,6 @@
 # Airport Information Scraping
 
-This repository contains Python scripts for scraping various types of airport information from different sources and updating a MySQL database with the gathered data. The information scraped includes runway counts, open date, and additional details like passenger numbers and aircraft movements.
+This folder contains Python scripts for scraping various types of airport information from different sources and updating a MySQL database with the gathered data. The information scraped includes runway counts, open date, and additional details like passenger numbers and aircraft movements.
 
 ## Folders and Scripts
 
