@@ -7,7 +7,7 @@ This folder contains a Python script for scraping the number of runways for vari
 ### `airport_runway_scraper.py`
 
 - **Description:** Scrapes the GCMap website for runway information for airports based on their IATA codes. Updates the MySQL database with the number of runways.
-- **Database Dependencies:** Depends on the airport general information, such as name and IATA code, being loaded already, so that we can fetch all airports and send HTTP requests using airport names, and store scraped data to the correct line.
+- **Database Dependencies:** Depends on the airport data, including name and IATA code, being preloaded into the Airports table. This allows the script to fetch all airports, send HTTP requests for each, and store the scraped data in the correct database records.
 - **Key Functions:**
   - `connect_to_db()`: Connects to the MySQL database.
   - `fetch_airports_with_iata_codes(cursor)`: Fetches a list of airports with valid IATA codes from the database.
