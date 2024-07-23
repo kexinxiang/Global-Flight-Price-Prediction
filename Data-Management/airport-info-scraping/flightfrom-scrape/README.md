@@ -4,7 +4,7 @@ This folder contains a Python script for scraping traffic information (number of
 
 ## Files
 
-### `airport_traffic_scraper.py`
+### `airport-dest-airline-scrape.py`
 
 - **Description:** Scrapes traffic information from a specified website based on airport IATA codes and updates the MySQL database with the number of destinations and airlines for each airport.
 - **Database Dependencies:** Depends on the airport data, including name and IATA code, being preloaded into the `Airports` table. This allows the script to fetch all airports, send HTTP requests for each, and store the scraped data in the correct database records.
@@ -17,4 +17,4 @@ This folder contains a Python script for scraping traffic information (number of
 
 ## Logging
 
-The script logs its activities to a file named `airport_traffic_scraper.log`. Check this log for detailed information about the scraping process, including successes and any issues encountered.
+The script logs its activities to a file named `airport-dest-airline-scrape.log`. Check this log for detailed information about the scraping process, including successes and any issues encountered.
