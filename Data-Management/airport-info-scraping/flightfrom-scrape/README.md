@@ -6,7 +6,7 @@ This folder contains a Python script for scraping traffic information (number of
 
 ### `airport-dest-airline-scrape.py`
 
-- **Description:** Scrapes traffic information from a specified website based on airport IATA codes and updates the MySQL database with the number of destinations and airlines for each airport.
+- **Description:** Scrapes traffic information from a flightform's website based on airport IATA codes and updates the MySQL database with the number of destinations and airlines for each airport.
 - **Database Dependencies:** Depends on the airport data, including name and IATA code, being preloaded into the `Airports` table. This allows the script to fetch all airports, send HTTP requests for each, and store the scraped data in the correct database records.
 - **Key Functions:**
   - `connect_to_db()`: Connects to the MySQL database.
