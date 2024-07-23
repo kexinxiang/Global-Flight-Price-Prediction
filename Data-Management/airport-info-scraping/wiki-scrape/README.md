@@ -7,7 +7,7 @@ This folder contains Python scripts for scraping and updating airport informatio
 ### 1. `airport-scrape-wiki.py`
 
 - **Description:** Scrapes Wikipedia for airport information including the opened date, number of runways, annual passenger count, and annual aircraft movements. Updates these details in the MySQL database.
-- **Database Dependencies:** Depends on the airport general information, such as name and IATA code, being loaded already, so that we can fetch all airports and send HTTP requests using airport names, and store scraped data to the correct line.
+- **Database Dependencies:** Depends on the airport data, including name and IATA code, being preloaded into the Airports table. This allows the script to fetch all airports, send HTTP requests for each, and store the scraped data in the correct database records.
 - **Key Functions:**
   - `connect_to_db()`: Connects to the MySQL database.
   - `fetch_airports(cursor)`: Fetches a list of airport names from the database.
