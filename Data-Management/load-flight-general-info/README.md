@@ -6,14 +6,14 @@ This folder contains Python scripts for importing airline and airport data from 
 
 ### `import-airline.py`
 
-- **Description:** Processes a `.dat` file containing airline information and inserts the data into a MySQL database.
+- **Description:** Processes `airline.dat` containing airline information and inserts the data into a MySQL database.
 - **Key Functions:**
   - `process_dat_file(filename)`: Reads and processes the airline `.dat` file, extracting relevant fields.
   - Inserts airline data into the MySQL `Airlines` table.
 
 ### `import-airport.py`
 
-- **Description:** Processes a `.dat` file containing airport information and inserts the data into a MySQL database.
+- **Description:** Processes `airport.dat` containing airport information and inserts the data into a MySQL database.
 - **Key Functions:**
   - `process_dat_file(filename)`: Reads and processes the airport `.dat` file, extracting relevant fields and validating latitude and longitude.
   - Inserts airport data into the MySQL `Airports` table.
