@@ -1,6 +1,37 @@
 # Data Management - Development Cycle 1
 
-This folder contains all the scripts and resources for the first development cycle of the project, focused on loading and scraping data related to airlines and airports.
+This folder contains all the scripts and resources for the first development cycle of the project, focused on loading and scraping data related to airlines and airports and storing them to MySQL database.
+
+## MySQL Database Structure
+
+### `Airports` Table
+
+- `id`: INT, Primary Key
+- `name`: VARCHAR(255)
+- `iata_code`: VARCHAR(3)
+- `city`: VARCHAR(255)
+- `country`: VARCHAR(255)
+- `latitude`: FLOAT
+- `longitude`: FLOAT
+- `destination_count`: INT
+- `airline_count`: INT
+- `annual_passenger`: BIGINT
+- `annual_flight`: BIGINT
+- `area`: FLOAT
+- `gate_count`: INT
+- `runway_count`: INT
+- `open_date`: DATE
+
+### `Airlines` Table
+
+- `id`: INT, Primary Key
+- `name`: VARCHAR(255)
+- `iata_code`: VARCHAR(2)
+- `icao_code`: VARCHAR(3)
+- `country`: VARCHAR(255)
+- `fleet_size`: INT
+- `destination_count`: INT
+- `alliance`: VARCHAR(255)
 
 ## Folder Structure
 
