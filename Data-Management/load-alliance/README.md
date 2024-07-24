@@ -7,7 +7,7 @@ This folder contains a Python script for updating airline alliance information i
 ### `load-alliance.py`
 
 - **Description:** Reads alliance information from text files and updates the MySQL database with this information.
-- **Database Dependencies:** Depends on the airline data, including name and IATA code, being preloaded into the Airlines table. This allows the script to fetch all airports, send HTTP requests for each, and store the scraped data in the correct database records.
+- **Database Dependencies:** Depends on the airline data, including name and IATA code, being preloaded into the `Airlines` table. This allows the script to fetch all airports, send HTTP requests for each, and store the scraped data in the correct database records.
 - **Key Functions:**
   - `connect_to_db()`: Connects to the MySQL database.
   - `update_alliance(airline_iata, alliance, cursor, connection)`: Updates the alliance information for an airline in the database.
