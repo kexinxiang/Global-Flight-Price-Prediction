@@ -14,7 +14,7 @@ This folder contains all the scripts and resources for the first development cyc
 
 ### `airport-info-scraping/`
 
-- **Purpose:** Contains scripts for scraping detailed information about airports, such as the number of runways, from various online sources. These scripts update the MySQL database with the scraped data.
+- **Purpose:** Contains scripts for scraping detailed information about airports, such as the number of runways, from various online sources: Wikipedia, FlightForm, and GCmap. These scripts update the MySQL database with the scraped data.
 
 ### `fleet-dest-scraping/`
 
@@ -22,7 +22,7 @@ This folder contains all the scripts and resources for the first development cyc
 
 ### `load-alliance/`
 
-- **Purpose:** Includes scripts for loading and updating airline alliance information in the MySQL database. This involves processing files that list airlines and their corresponding alliances.
+- **Purpose:** Includes scripts for loading and updating airline alliance information in the MySQL database. This involves processing text files that list airlines and their corresponding alliances.
 
 ### `load-airport-airline-general-info/`
 
