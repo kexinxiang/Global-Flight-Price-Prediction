@@ -7,7 +7,7 @@ This folder contains a Python script for scraping fleet size and destination cou
 ### `load-fleet-dest.py`
 
 - **Description:** Scrapes Wikipedia for fleet size and destination count information for airlines based on their names. Updates the MySQL database with this information.
-- **Database Dependencies:** Depends on the airline data, including name and IATA code, being preloaded into the `Airlines` table. This allows the script to fetch all airports, send HTTP requests for each, and store the scraped data in the correct database records.
+- **Database Dependencies:** Depends on the airline data, including name and IATA code, being preloaded into the `Airlines` table. This allows the script to fetch all airlines, send HTTP requests for each, and store the scraped data in the correct database records.
 - **Key Functions:**
   - `connect_to_db()`: Connects to the MySQL database.
   - `fetch_airlines(cursor)`: Fetches a list of airlines with valid IATA codes from the database.
