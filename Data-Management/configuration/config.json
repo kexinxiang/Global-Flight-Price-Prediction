@@ -1,0 +1,10 @@
+
+{
+    "_comment": "This files allows the storage method to change between databse storage or csv storage",
+    "storage_method": "csv",
+    "db_host": "127.0.0.1",
+    "db_user": "root",
+    "db_password": "123456",
+    "db_name": "flight_database",
+    "db_port": "3308"
+}
