@@ -72,13 +72,13 @@ def load_reference_data():
     airlines = {}
     airports = {}
 
-    with open('../data-visualization/Airlines.csv', 'r') as f:
+    with open('../../data-visualization/Airlines.csv', 'r') as f:
         reader = csv.DictReader(f)
         for row in reader:
             if row['alliance'] != "NULL":
                 airlines[row['iata_code']] = row['id']
 
-    with open('../data-visualization/Airports.csv', 'r') as f:
+    with open('../../data-visualization/Airports.csv', 'r') as f:
         reader = csv.DictReader(f)
         for row in reader:
             airports[row['iata_code']] = row['id']
@@ -87,7 +87,7 @@ def load_reference_data():
 
 def save_as_csv(data, airlines_ref, airports_ref):
     logging.info("Saving data as csv")
-    with open('../data-visualization/Routes.csv', 'w', newline='') as csvfile:
+    with open('../../data-visualization/Routes.csv', 'w', newline='') as csvfile:
         fieldnames = ['id', 'airline_code', 'airline_id', 'origin_airport_code', 'origin_airport_id', 'dest_airport_code', 'dest_airport_id']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
@@ -140,7 +140,7 @@ def get_ids(route, cursor):
     return None, None, None
 
 # Main script starts here
-with open('../configuration/config.json', 'r') as f:
+with open('../../configuration/config.json', 'r') as f:
     config = json.load(f)
 
 routes_data = process_data("Routes.dat")

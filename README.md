@@ -31,9 +31,9 @@ The primary goal of this project is to build a machine learning model that can a
 ## Folder Structure
 
 - `data-management/`
-  - **Purpose:** Contains scripts and resources for the initial development cycle focused on loading and scraping data related to airlines and airports.
+  - **Purpose:** Contains scripts and resources for the initial development cycle focused on loading and scraping data related to airlines, airports, flights, routes, and prices.
   - Subfolders:
-    - `airport-info-scraping/`: Scrapes detailed information about airports.
-    - `fleet-dest-scraping/`: Scrapes fleet size and destination count information for airlines.
-    - `load-alliance/`: Loads and updates airline alliance information.
-    - `load-airport-airline-general-info/`: Loads general information about airports and airlines from `.dat` files.
+    - `configuration/`: Controls data storage method: Database or `CSV` file.
+    - `data-visualization/`: Stores data as CSV file for visualization if cannot connect to database.
+    - `loading-scripts/`: Contains scripts that directly load `.dat` file into database.
+    - `scraping-scripts/`: Contains scripst that scrapes website and load information to the database or as `CSV`.

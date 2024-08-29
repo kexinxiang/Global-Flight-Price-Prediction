@@ -36,28 +36,28 @@ This folder contains all the scripts and resources for the first development cyc
 ## Folder Structure
 
 - `data-management/`
-  - `airport-info-scraping/`
-  - `fleet-dest-scraping/`
-  - `load-alliance/`
-  - `load-airport-airline-general-info/`
+  - `configuration/`
+  - `data-visualization/`
+  - `loading-scripts/` 
+  - `scraping-scripts/`
 
 ## Description of Folders
 
-### `airport-info-scraping/`
+### `configuration/`
 
-- **Purpose:** Contains scripts for scraping detailed information about airports, such as the number of runways, from various online sources: Wikipedia, FlightForm, and GCmap. These scripts update the MySQL database with the scraped data.
+- **Purpose:** Contains configuration that controls how the data is stored: either in a database or in a `CSV` file.
 
-### `fleet-dest-scraping/`
+### `data-visualization/`
 
-- **Purpose:** Contains scripts for scraping fleet size and destination count information for airlines from Wikipedia. The gathered data is then used to update the relevant fields in the MySQL database.
+- **Purpose:** Stores `CSV` files of Airports, Airlines, Routes, Flights, and Prices data when running scripts of loading data whenc configuration is set to `CSV`.
 
-### `load-alliance/`
+### `loading-scripts/`
 
-- **Purpose:** Includes scripts for loading and updating airline alliance information in the MySQL database. This involves processing text files that list airlines and their corresponding alliances.
+- **Purpose:** Contains scripts for loading `.dat` file directly downloaded from the `openflights.com`. Configuration can be modify to choose the method of storage.
 
-### `load-airport-airline-general-info/`
+### `scraping-scripts/`
 
-- **Purpose:** Contains scripts for initially loading general information about airports and airlines into the MySQL database from `.dat` files. This includes basic details like names, IATA and ICAO codes, and locations. This serves as the basis information that assits later web scraping scripts.
+- **Purpose:** Contains scripts for scraping detailed information about airports, airlines, flights, and prices. These scripts update the MySQL database or save as `CSV` in the `data-visualization/` folder with the scraped data.
 
 ## Logging
 
